@@ -1,0 +1,34 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: look
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: look
+  template:
+    metadata:
+      labels:
+        app: look
+    spec:
+      containers:
+      - image: okteto.dev/look:latest
+        name: look
+        ports:
+        - containerPort: 8080
+        env:
+        - name: PORT
+          value: "8080"
+        - name: ProxySite
+          value: "51ape.com"
+        - name: Vless_UUID
+          value: "e15310f1-4e09-496b-b024-d388d49ebcde"
+        - name: Vless_Path
+          value: "/vless"
+        - name: Vmess_UUID
+          value: "e15310f1-4e09-496b-b024-d388d49ebcde"
+        - name: Vmess_Path
+          value: "/vmess"
+        - name: Share_Path
+          value: "/share233"

@@ -1,0 +1,43 @@
+{
+  "name": "sayhano",
+  "description": "sayhano",
+  "keywords": ["sayhano"],
+  "env": {
+    "ProxySite": {
+      "description": "必须填写一个伪装网站，例如：music.163.com",
+      "value": "music.163.com"
+    },
+
+    "Vless_UUID": {
+      "description": "从https://www.uuidgenerator.net/这个网站生成一个UUID来填写到下面的方框中",
+      "value": "e15310f1-4e09-496b-b024-d388d49ebcde"
+    },
+
+    "Vless_Path": {
+      "description": "VLESS路径设置。如果开启反代，不要与反代网站存在的uri相同",
+      "value": "/vless"
+    },
+    "Vmess_UUID": {
+      "description": "从https://www.uuidgenerator.net/这个网站生成一个UUID来填写到下面的方框中",
+      "value": "e15310f1-4e09-496b-b024-d388d49ebcde"
+    },
+
+    "Vmess_Path": {
+      "description": "VMESS路径设置。如果开启反代，不要与反代网站存在的uri相同",
+      "value": "/vmess"
+    },
+    
+    "Share_Path": {
+      "description": "Share path, /share233/index.html查看订阅链接及二维码",
+      "value": "/share233"
+    },
+
+    "VER": {
+       "description": "Xray版本，默认latest安装最新版本，这里不需要修改。)",
+       "value": "latest"
+     }
+  },
+  "website": "https://github.com/wwaitforme/heard.git",
+  "repository": "https://github.com/wwaitforme/heard.git",
+  "stack": "container"
+ }
